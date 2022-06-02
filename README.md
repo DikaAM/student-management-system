@@ -26,7 +26,7 @@ Update :
 
 View :
 
-![image](https://user-images.githubusercontent.com/81276428/171583476-c578dc94-3ce1-4d76-9614-c98caaa48a72.png)
+![image](https://user-images.githubusercontent.com/81276428/171584512-5dc6e882-36db-4993-85b0-ead91a706ddf.png)
 
 
 
