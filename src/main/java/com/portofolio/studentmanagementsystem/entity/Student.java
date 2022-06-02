@@ -1,6 +1,8 @@
 package com.portofolio.studentmanagementsystem.entity;
 
 import lombok.*;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 
@@ -8,6 +10,8 @@ import javax.persistence.*;
 @Table(name = "students")
 @Getter
 @Setter
+@SQLDelete(sql = "UPDATE students SET deleted = true WHERE id=?")
+@Where(clause = "deleted=false")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +25,8 @@ public class Student {
 
     @Column(name = "email")
     private String email;
+
+    private boolean deleted = Boolean.FALSE;
 
     public Student(){
 
