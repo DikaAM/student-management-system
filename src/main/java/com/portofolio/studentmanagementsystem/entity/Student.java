@@ -8,8 +8,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "students")
-@Getter
-@Setter
+@Data
 @SQLDelete(sql = "UPDATE students SET deleted = true WHERE id=?")
 @Where(clause = "deleted=false")
 public class Student {
@@ -28,16 +27,7 @@ public class Student {
 
     private boolean deleted = Boolean.FALSE;
 
-    public Student(){
 
-    }
-
-    public Student(String firstName, String lastName, String email){
-        super();
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-    }
 
 
 }

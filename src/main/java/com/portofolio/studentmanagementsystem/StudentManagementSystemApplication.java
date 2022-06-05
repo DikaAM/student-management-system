@@ -1,6 +1,5 @@
 package com.portofolio.studentmanagementsystem;
 
-import com.portofolio.studentmanagementsystem.entity.Student;
 import com.portofolio.studentmanagementsystem.repository.StundentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
